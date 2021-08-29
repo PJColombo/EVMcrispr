@@ -18,6 +18,7 @@ jobs:
 
       - name: Install and Build
         run: |
+          yarn add typedoc
           yarn generate-docs
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
